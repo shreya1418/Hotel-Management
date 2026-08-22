@@ -22,15 +22,29 @@ An Android app for hotel room booking, built with Java and Firebase. Guests veri
 
 
 ## How to Run
-
 1. Clone the repository
-git clone https://github.com/shreya-User/Hotel-Management.git
-
+```bash
+   git clone https://github.com/shreya-User/Hotel-Management.git
+   cd Hotel-Management
+```
 2. Open the project folder in **Android Studio**
 3. Add your own `google-services.json` file (from Firebase Console) into the `app/` folder
 4. Let Gradle sync automatically
-5. Connect an Android device or start an emulator (min SDK 21)
+5. Connect an Android device or start an emulator
 6. Click **Run** ▶ in Android Studio
+## Project Structure
+| File | Purpose |
+|------|---------|
+| `MainActivity.java` | Booking form (dates, guests, Aadhaar, promo code) |
+| `SendOTP.java` | Collects name/phone, sends OTP |
+| `VerifyOTPActivity.java` | OTP entry and verification |
+| `RoomType.java` | Room type selection screen |
+| `UserDetails.java` | Guest's booking summary |
+| `Admin.java` | Admin: list of all bookings |
+| `MainDataBase.java` | Admin: list of all main user records |
+| `User.java` | Booking data model |
+| `MemoryData.java` | Saves session data on the device |
+
 
 ## Project structure
 
