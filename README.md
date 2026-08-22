@@ -20,6 +20,18 @@ An Android app for hotel room booking, built with Java and Firebase. Guests veri
 - **UI:** Android Views, RecyclerView, CardView, ViewFlipper, Material Components
 - **Build system:** Gradle
 
+
+## How to Run
+
+1. Clone the repository
+git clone https://github.com/shreya-User/Hotel-Management.git
+
+2. Open the project folder in **Android Studio**
+3. Add your own `google-services.json` file (from Firebase Console) into the `app/` folder
+4. Let Gradle sync automatically
+5. Connect an Android device or start an emulator (min SDK 21)
+6. Click **Run** ▶ in Android Studio
+
 ## Project structure
 
 app/src/main/java/com/example/hotelmanagement/
