@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Details"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:id="@+id/type_of_room"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/l0"
+
+        >
+
+        <TextView
+            android:id="@+id/ptxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Adult: "
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/personspn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ptxt"
+            android:layout_marginTop="2dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/personspn"
+            android:background="@color/black"
+            android:layout_margin="5dp"
+            android:id="@+id/v2"
+            />
+        <TextView
+            android:id="@+id/ctxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Child: "
+            android:textSize="20sp"
+            android:layout_below="@+id/v2"
+            android:layout_marginTop="2dp"/>
+
+        <Spinner
+            android:id="@+id/childspn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v2"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/ctxt" />
+    </RelativeLayout>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adhar card Number"
+        android:layout_below="@+id/type_of_room"
+        android:id="@+id/ETadhar1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="2nd Adhar card Number"
+        android:layout_below="@+id/type_of_room"
+        android:id="@+id/ETadhar2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/nameET"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/Htxt"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:hint="Full name"-->
+<!--        android:textSize="20sp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/phoneET"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/nameET"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:hint="Enter Phone Number"-->
+<!--        android:textSize="20sp" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/l1"
+        android:layout_below="@+id/type_of_room">
+<!--        <TextView-->
+<!--            android:id="@+id/txt1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/Check_Out_date"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:text="Room Type:"-->
+<!--            android:textSize="22sp"-->
+<!--            />-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/type_of_room"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textSize="20sp"-->
+<!--            />-->
+
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_below="@+id/l0"-->
+<!--        android:id="@+id/l2"-->
+<!--        >-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_marginRight="2dp"-->
+<!--            android:text="Check In Time :"-->
+<!--            android:textSize="22sp"-->
+<!--            android:layout_below="@+id/personspn"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            />-->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/Check_In_time"-->
+<!--        android:layout_marginLeft="2dp"-->
+<!--        android:layout_marginRight="5dp"-->
+
+<!--        android:textSize="22sp"-->
+<!--        android:layout_below="@+id/personspn"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        />-->
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:id="@+id/l3"-->
+<!--        android:layout_below="@+id/l2"-->
+<!--        >-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_marginRight="2dp"-->
+<!--            android:text="Check In Date :"-->
+<!--            android:textSize="22sp"-->
+<!--            />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:id="@+id/Check_In_date"-->
+<!--        android:layout_marginLeft="2dp"-->
+<!--        android:layout_marginRight="5dp"-->
+
+<!--        android:textSize="22sp"-->
+<!--        />-->
+
+
+<!--    </LinearLayout>-->
+
+<!--    <View-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:id="@+id/v1"-->
+<!--        android:layout_below="@+id/l2"-->
+<!--        android:background="@color/black"-->
+<!--        android:layout_margin="5dp"-->
+<!--        />-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:id="@+id/l4"-->
+<!--        >-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_marginRight="2dp"-->
+<!--            android:text="Check Out Time :"-->
+<!--            android:textSize="22sp"-->
+<!--            android:layout_below="@+id/v1"-->
+<!--            />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/Check_Out_time"-->
+<!--        android:layout_marginLeft="2dp"-->
+<!--        android:layout_marginRight="5dp"-->
+
+<!--        android:textSize="22sp"-->
+<!--        android:layout_below="@+id/v1"-->
+<!--        />-->
+<!--    </LinearLayout>-->
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/l5"-->
+<!--        android:orientation="horizontal"-->
+<!--        >-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_marginRight="2dp"-->
+<!--            android:text="Check Out Date :"-->
+<!--            android:textSize="22sp"-->
+<!--            android:layout_below="@+id/Check_Out_time"-->
+<!--            />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:id="@+id/Check_Out_date"-->
+<!--        android:layout_marginLeft="2dp"-->
+<!--        android:layout_marginRight="5dp"-->
+
+<!--        android:textSize="22sp"-->
+<!--        android:layout_below="@+id/Check_Out_time"-->
+<!--        />-->
+
+<!--    </LinearLayout>-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l6"
+        android:orientation="horizontal"
+        >
+
+
+        <TextView
+            android:id="@+id/Check_In_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_toStartOf="@+id/DinTime"
+            android:text="Check In"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/DinTime"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_toStartOf="@+id/v4"
+            android:src="@drawable/ic_baseline_date_range_24" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="@color/black"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/v4"
+            />
+
+        <TextView
+            android:id="@+id/Check_Out_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_toEndOf="@+id/v4"
+            android:text="Check Out"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toEndOf="@+id/Check_Out_date"
+            android:src="@drawable/ic_baseline_date_range_24" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l7"
+        android:orientation="horizontal"
+        >
+
+
+        <TextView
+            android:id="@+id/Check_In_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_toStartOf="@+id/CinTime"
+            android:text="Check In"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_toStartOf="@+id/v3"
+            android:src="@drawable/ic_baseline_access_time_24"
+            android:id="@+id/CinTime"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="@color/black"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/v3"
+            />
+
+        <TextView
+            android:id="@+id/Check_Out_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_toEndOf="@+id/v3"
+            android:text="Check Out"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_access_time_24"
+            android:layout_marginLeft="2dp"
+            android:layout_toEndOf="@+id/Check_Out_time"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/room_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/Check_Out_date"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/amount"
+        android:textSize="30dp"
+        android:text="Amount"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:hint="Promo Code"
+        android:id="@+id/promo"
+        android:layout_marginLeft="10dp"
+        />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="apply"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/apply"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bookBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/room_image"
+        android:layout_gravity="center"
+        android:text="Book"
+        android:layout_marginTop="5dp"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

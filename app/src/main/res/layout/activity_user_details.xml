@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserDetails"
+    android:layout_margin="10dp"
+    >
+
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your details"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        style="@style/TextAppearance.AppCompat"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/exit"
+        android:src="@drawable/ic_baseline_exit_to_app_24"
+        />
+
+    <TextView
+        android:id="@+id/uName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="25sp"
+        android:layout_below="@+id/details"
+        style="@style/TextAppearance.AppCompat"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="phone"
+        android:id="@+id/uphone"
+        android:layout_below="@+id/uName"
+        android:textSize="25sp"
+        style="@style/TextAppearance.AppCompat"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room type"
+        android:id="@+id/uRoom"
+        android:layout_below="@+id/uphone"
+        android:textSize="25sp"
+        style="@style/TextAppearance.AppCompat"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check in time"
+        android:id="@+id/uCheck_in_time"
+        android:layout_below="@+id/uRoom"
+        android:textSize="25sp"
+        style="@style/TextAppearance.AppCompat"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check in date"
+        android:id="@+id/uCheck_in_date"
+        android:layout_below="@+id/uCheck_in_time"
+        android:textSize="25sp"
+        style="@style/TextAppearance.AppCompat"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check out time"
+        android:id="@+id/uCheck_out_time"
+        android:layout_below="@+id/uCheck_in_date"
+        android:textSize="25sp"
+        style="@style/TextAppearance.AppCompat"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check out date"
+        android:id="@+id/uCheck_out_date"
+        android:layout_below="@+id/uCheck_out_time"
+        android:textSize="25sp"
+        style="@style/TextAppearance.AppCompat"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Token"
+        android:id="@+id/uToken"
+        android:layout_below="@+id/uCheck_out_date"
+        android:textSize="25sp"
+        style="@style/TextAppearance.AppCompat"
+        />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:id="@+id/uimg"
+        android:layout_below="@+id/uToken"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/uAmount"
+        android:layout_below="@+id/uimg"
+        android:textSize="25sp"
+        style="@style/TextAppearance.AppCompat"
+        />
+
+
+    <TextView
+        android:id="@+id/uNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uAmount"
+        android:text="Note"
+        style="@style/TextAppearance.AppCompat"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:id="@+id/logoutbtn"
+        android:layout_below="@+id/uNote"
+        android:layout_centerInParent="true"
+        />
+
+
+</RelativeLayout>
